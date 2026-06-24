@@ -1,0 +1,28 @@
+# Development files
+node_modules
+.env.local
+.env.*.local
+
+# Build artifacts (will be rebuilt on Vercel)
+dist
+*.tsbuildinfo
+
+# Test files
+coverage
+.nyc_output
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Database files (not needed on Vercel)
+*.db
+*.sqlite
+*.sqlite3
