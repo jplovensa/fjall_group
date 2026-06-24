@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:client": "vite build",
     "build:server": "esbuild api/index.ts --platform=node --bundle --format=esm --outdir=api --external:@hono/node-server --external:mysql2 --external:@aws-sdk/client-s3 --external:@aws-sdk/s3-request-presigner",
-    "vercel-build": "npm run build && npm run build:server",
+    "vercel-build": "npm run build:client && npm run build:server",
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "NODE_ENV=production node dist/boot.js",
