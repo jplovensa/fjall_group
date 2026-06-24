@@ -26,12 +26,3 @@ Thumbs.db
 *.db
 *.sqlite
 *.sqlite3
-
-# TypeScript source files (only deploy bundled JS)
-api/**/*.ts
-!api/index.js
-contracts
-db
-*.ts
-!*.d.ts
-tsconfig*.json
